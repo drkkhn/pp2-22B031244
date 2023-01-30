@@ -1,0 +1,43 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "tmx/jungle_level.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "jungle_assets/jungle tileset/jungle tileset.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 2.4294,
+            "scaleInEditor": 2.51
+        },
+        "tmx/jungle_level.tmx": {
+            "scale": 1.1483,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 323.5217277714883,
+                "y": 249.49925977532
+            }
+        }
+    },
+    "last.imagePath": "/Users/beketbarlykov/Documents/pp2-22B031244/pygame_project/graphics/jungle_assets/jungle tileset",
+    "map.height": 40,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 50,
+    "openFiles": [
+        "tmx/jungle_level.tmx"
+    ],
+    "project": "levels.tiled-project",
+    "recentFiles": [
+        "tmx/jungle_level.tmx",
+        "jungle_assets/jungle tileset/jungle tileset.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

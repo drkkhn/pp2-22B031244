@@ -31,8 +31,13 @@ test_font = pygame.font.Font('graphics/fonts/Pixeltype.ttf', 50)
 text_surface = test_font.render('My world', False, 'Green')
 
 # creating an image surface for skeleton creature
-skeleton_idle_surface = pygame.image.load('graphics/creatures/Skeleton/Idle.png').convert_alpha()
-skeleton_x_pos = 400
+skeleton_idle = pygame.image.load('graphics/creatures/Skeleton/Idle.png').convert_alpha()
+skeleton_walk_1 = pygame.image.load('graphics/creatures/Skeleton/walk_1.png').convert_alpha()
+skeleton_walk_2 = pygame.image.load('graphics/creatures/Skeleton/walk_2.png').convert_alpha()
+skeleton_walk_3 = pygame.image.load('graphics/creatures/Skeleton/walk_3.png').convert_alpha()
+skeleton_walk_4 = pygame.image.load('graphics/creatures/Skeleton/walk_4.png').convert_alpha()
+
+skeleton_x_pos = 0
 
 
 # Initializing infinite loop to run the game
@@ -65,10 +70,10 @@ while True:
     screen.blit(text_surface, (300, 10))
 
     # displaying skeleton image moving
-    skeleton_x_pos -= 2
-    if skeleton_x_pos < -500:
-        skeleton_x_pos = 800
-    screen.blit(skeleton_idle_surface, (skeleton_x_pos, 500))
+    if skeleton_x_pos > 800:
+        skeleton_x_pos = 0
+    skeleton_x_pos += 2
+    screen.blit(skeleton_idle, (skeleton_x_pos, 480))
     pygame.display.update()
     
     #setting the maximum framerate to 60fps
