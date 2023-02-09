@@ -1,9 +1,11 @@
 import math
 
-max_num = int(input())
 
-nums = range(2, max_num)
+def main():
+    n = int(input())
+    nums = list(filter(lambda x: all(x%i != 0 for i in range(2, x)), range(2,n+1)))
+    print(nums)
 
-for i in range(2, max_num):
-    nums = filter(lambda x: x == i or x % i, nums)
-print(list(nums))
+
+if __name__ == "__main__":
+    main()
