@@ -6,8 +6,7 @@ with open('sample_data.json') as file:
 Interface Status
 ================================================================================
 DN                                                 Description           Speed    MTU  
--------------------------------------------------- --------------------  ------  ------
-    """)
+-------------------------------------------------- --------------------  ------  ------""")
     imdata = json_data["imdata"]
     for item in imdata:
         nest_item = item["l1PhysIf"]
@@ -16,7 +15,7 @@ DN                                                 Description           Speed  
         speed = attribs["speed"]
         mtu = attribs["mtu"]
         output = ""
-        if(len(dn) == 42):
+        if len(dn) == 42:
             output += dn + "                              " + speed + "   " + mtu
         else:
             output += dn + "                               " + speed + "   " + mtu
