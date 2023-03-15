@@ -15,7 +15,7 @@ def main():
     y_pos = 50
     
     while True:
-        for event in pygame.event.get():
+        for event in pygame.event.get((KEYDOWN)):
             match event.type:
                 case pygame.QUIT:
                     pygame.exit()
